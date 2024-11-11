@@ -33,6 +33,17 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
 }
 body.active {
   --color-bg: #212121;
