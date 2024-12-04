@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .column {
+        width: 100%;
+        float: none;
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.column {
+    flex: 1 1 300px; /* Kolom akan menyesuaikan ukuran */
+    margin: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 * {
   margin: 0;
   padding: 0;
