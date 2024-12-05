@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @media screen and (max-width: 600px) {
     .container {
-        width: 100%;
+        width: 50%;
         padding: 10px;
     }
     
