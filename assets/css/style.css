@@ -153,7 +153,10 @@ body {
   .btn {
     padding: 0.6rem 1.5rem;
   }
-
+.about {
+    display: flex;
+    padding: 2rem;
+}
   section {
     padding: 2rem 0 1.5rem;
   }
@@ -439,16 +442,18 @@ nav.scrolling {
 }
 
 .home {
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
 }
 .home-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .home .left {
-  margin-top: 3rem;
+    flex: 1;
 }
 .home .left h1 {
   font-size: 3.3rem;
@@ -492,10 +497,10 @@ nav.scrolling {
   box-shadow: var(--inner-shadow);
 }
 .home .right {
-  margin: auto;
+    flex: 1;
 }
 .home .right img {
-  max-width: 35rem;
+  max-width: 100%;
   height: auto;
   box-shadow: var(--shadow);
   border-radius: 0.5rem;
@@ -507,14 +512,12 @@ nav.scrolling {
 
 
 .about-container {
-  display: grid;
-  margin-top: 150px;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+ justify-content: space-between;
 }
 .about .left img {
-  max-height: 30rem;
-  width: auto;
+ max-width: 100%;
+  height: auto;
   box-shadow: var(--shadow);
   border-radius: 0.5rem 50% 0.5rem 0.5rem;
   -webkit-border-radius: 0.5rem 50% 0.5rem 0.5rem;
@@ -652,6 +655,14 @@ svg {
   -o-border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
+}
+.fasilitas {
+    padding: 2rem;
+}
+.fasilitas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .fasilitas .title h2 {
   font-weight: 500;
@@ -996,6 +1007,9 @@ svg {
   }
   .navlist a {
     font-size: 20px;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
   }
   .navlist.active {
     top: 4rem;
