@@ -11,6 +11,14 @@
     margin: 0;
     padding: 0;
 }
+@media (max-width: 768px) {
+    .navlist {
+        display: none;
+    }
+    .btn {
+        width: 100%;
+    }
+}
     @media (max-width: 360px) {
     h1 {
         font-size: 1.6rem;
