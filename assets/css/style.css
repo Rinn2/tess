@@ -5,7 +5,18 @@
     flex-wrap: wrap;
     justify-content: center;
     }
-    
+    @media (max-width: 360px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+    .navlist {
+        font-size: 18px;
+    }
+}
+
     .column {
         width: 100%;
         float: none;
