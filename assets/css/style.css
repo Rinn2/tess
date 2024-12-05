@@ -5,6 +5,52 @@
     width: 100%;
     box-sizing: border-box;
 }
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+Dari tampilan yang Anda lampirkan, masalah yang terlihat adalah konten yang tidak tersusun rapi dan belum menyesuaikan dengan ukuran layar pada perangkat mobile. Berikut adalah langkah-langkah untuk memperbaiki masalah ini:
+
+1. Gunakan Grid atau Flexbox dengan Properti Responsif
+Gunakan CSS modern seperti Flexbox atau Grid untuk memastikan elemen tersusun rapi. Misalnya, untuk kontainer utama:
+
+css
+Copy code
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+2. Sesuaikan Ukuran Font pada Perangkat Mobile
+Gunakan media query untuk memastikan ukuran font sesuai dengan layar kecil:
+
+css
+Copy code
+h1, h2, h3, p {
+    margin: 0;
+    text-align: center;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Sesuaikan ukuran untuk layar kecil */
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
     }
     html, body {
     overflow-x: hidden;
