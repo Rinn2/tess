@@ -731,57 +731,46 @@ img, video {
 
 .Kritik-container {
   display: flex;
-  height: 55vh;
+  flex-wrap: nowrap; /* Pastikan elemen tidak membungkus ke bawah */
   align-items: flex-start;
   gap: 1rem;
   border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
-  overflow-x: auto;
+  overflow-x: auto; /* Aktifkan scroll horizontal */
   scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
+  scroll-snap-type: x mandatory; /* Atur scroll snap secara horizontal */
   padding: 4rem 1rem 2rem;
+  white-space: nowrap; /* Hindari elemen melipat ke baris berikutnya */
 }
-.Kritik .title h2 {
-  font-weight: 500;
-  margin-top: 50px;
-}
+
 .Kritik-container .card {
   position: relative;
-  min-width: 33%;
+  flex: 0 0 auto; /* Pastikan elemen tidak menyusut */
+  width: 300px; /* Sesuaikan lebar setiap card */
   display: flex;
   flex-direction: column;
   gap: 1rem;
   box-shadow: var(--shadow);
   border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
   padding: 4rem 2rem 2rem;
+  scroll-snap-align: start; /* Pastikan setiap card sesuai dengan scroll snap */
 }
+
 .Kritik-container img {
   position: absolute;
   top: -3rem;
   width: 6rem;
+  height: 6rem; /* Tambahkan height untuk memastikan gambar proporsional */
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   margin: auto;
   border: 0.3rem solid var(--color-bg);
   box-shadow: var(--shadow);
 }
+
 .Kritik-container h3 {
   font-weight: 700;
   font-size: 1.2rem;
   padding-bottom: 0.7rem;
 }
-
 
 .contact-content .row {
   margin-top: -65px;
@@ -937,9 +926,6 @@ img, video {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-  }
-  .Kritik-container .card {
-    min-width: 50%;
   }
 }
 
