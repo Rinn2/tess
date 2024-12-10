@@ -753,6 +753,8 @@ img, video {
   border-radius: 0.4rem;
   padding: 4rem 2rem 2rem;
   scroll-snap-align: start; /* Pastikan setiap card sesuai dengan scroll snap */
+  height: auto; /* Ubah tinggi menjadi otomatis agar teks tidak terpotong */
+  overflow: visible; /* Pastikan konten yang lebih panjang tetap terlihat */
 }
 
 .Kritik-container img {
@@ -770,7 +772,15 @@ img, video {
   font-weight: 700;
   font-size: 1.2rem;
   padding-bottom: 0.7rem;
+  margin: 0; /* Hilangkan margin jika ada */
 }
+
+.Kritik-container p {
+  font-size: 1rem;
+  line-height: 1.5; /* Atur jarak antar baris untuk teks */
+  margin: 0; /* Hindari margin yang tidak diperlukan */
+}
+
 
 .contact-content .row {
   margin-top: -65px;
