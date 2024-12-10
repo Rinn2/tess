@@ -42,15 +42,7 @@
 
  
   /* Fasilitas Section Responsiveness */
-  .fasilitas-container {
-    flex-direction: column; /* Stack boxes vertically */
-  }
 
-  .fasilitas-container .box {
-    width: 100%; /* Full width for boxes */
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
 
   /* Daftar Section Responsiveness */
   .daftar-container {
