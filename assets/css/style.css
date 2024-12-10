@@ -731,56 +731,63 @@ img, video {
 
 .Kritik-container {
   display: flex;
-  height: 55vh;
+  justify-content: center; /* Menempatkan elemen di tengah */
   align-items: flex-start;
-  gap: 1rem;
-  border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  padding: 4rem 1rem 2rem;
+  gap: 1.5rem; /* Memberikan jarak antar kartu */
+  padding: 4rem 1rem;
+  overflow: hidden; /* Menghindari overflow horizontal */
 }
+
 .Kritik .title h2 {
-  font-weight: 500;
-  margin-top: 50px;
+  font-weight: 700; /* Memberikan penekanan pada judul */
+  text-align: center;
+  margin-bottom: 2rem; /* Memberikan jarak antara judul dan container */
+  color: var(--primary-color);
 }
+
 .Kritik-container .card {
   position: relative;
-  min-width: 33%;
+  width: 300px; /* Ukuran tetap untuk kartu */
+  background: #fff; /* Warna latar kartu */
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  box-shadow: var(--shadow);
-  border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
-  padding: 4rem 2rem 2rem;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s ease; /* Animasi hover */
 }
+
+.Kritik-container .card:hover {
+  transform: translateY(-10px); /* Efek melayang saat hover */
+}
+
 .Kritik-container img {
   position: absolute;
   top: -3rem;
   width: 6rem;
+  height: 6rem; /* Menjaga proporsi lingkaran */
+  object-fit: cover;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin: auto;
-  border: 0.3rem solid var(--color-bg);
-  box-shadow: var(--shadow);
+  border: 0.3rem solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 .Kritik-container h3 {
-  font-weight: 700;
+  margin-top: 3rem; /* Memberikan jarak dari gambar */
+  font-weight: 600;
   font-size: 1.2rem;
-  padding-bottom: 0.7rem;
+  text-align: center;
 }
+
+.Kritik-container p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
 
 
 .contact-content .row {
