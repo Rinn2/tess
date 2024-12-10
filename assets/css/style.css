@@ -731,37 +731,38 @@ img, video {
 
 .Kritik-container {
   display: flex;
-  flex-wrap: nowrap; /* Pastikan elemen tidak membungkus ke bawah */
+  flex-wrap: nowrap; /* Hindari elemen berpindah ke bawah */
   align-items: flex-start;
   gap: 1rem;
   border-radius: 0.4rem;
   overflow-x: auto; /* Aktifkan scroll horizontal */
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory; /* Atur scroll snap secara horizontal */
+  scroll-snap-type: x mandatory;
   padding: 4rem 1rem 2rem;
-  white-space: nowrap; /* Hindari elemen melipat ke baris berikutnya */
+  white-space: nowrap; /* Pastikan semua elemen tetap dalam satu baris */
 }
 
 .Kritik-container .card {
   position: relative;
-  flex: 0 0 auto; /* Pastikan elemen tidak menyusut */
-  width: 300px; /* Sesuaikan lebar setiap card */
+  flex: 0 0 auto; /* Jangan menyusut atau meluas otomatis */
+  width: 300px; /* Atur lebar tetap */
   display: flex;
   flex-direction: column;
   gap: 1rem;
   box-shadow: var(--shadow);
   border-radius: 0.4rem;
   padding: 4rem 2rem 2rem;
-  scroll-snap-align: start; /* Pastikan setiap card sesuai dengan scroll snap */
-  height: auto; /* Ubah tinggi menjadi otomatis agar teks tidak terpotong */
-  overflow: visible; /* Pastikan konten yang lebih panjang tetap terlihat */
+  scroll-snap-align: start;
+  height: auto; /* Pastikan tinggi kartu menyesuaikan konten */
+  min-height: 200px; /* Tambahkan tinggi minimum */
+  overflow: visible; /* Konten lebih panjang tetap terlihat */
 }
 
 .Kritik-container img {
   position: absolute;
   top: -3rem;
   width: 6rem;
-  height: 6rem; /* Tambahkan height untuk memastikan gambar proporsional */
+  height: 6rem;
   border-radius: 50%;
   margin: auto;
   border: 0.3rem solid var(--color-bg);
@@ -772,15 +773,15 @@ img, video {
   font-weight: 700;
   font-size: 1.2rem;
   padding-bottom: 0.7rem;
-  margin: 0; /* Hilangkan margin jika ada */
+  margin: 0;
 }
 
 .Kritik-container p {
   font-size: 1rem;
-  line-height: 1.5; /* Atur jarak antar baris untuk teks */
-  margin: 0; /* Hindari margin yang tidak diperlukan */
+  line-height: 1.5; /* Atur jarak antar baris teks */
+  margin: 0; /* Hindari margin tambahan */
+  white-space: normal; /* Pastikan teks bisa terbungkus ke bawah */
 }
-
 
 .contact-content .row {
   margin-top: -65px;
