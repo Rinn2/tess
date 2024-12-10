@@ -40,6 +40,7 @@
     height: auto;
   }
 
+ 
   /* Fasilitas Section Responsiveness */
   .fasilitas-container {
     flex-direction: column; /* Stack boxes vertically */
@@ -741,6 +742,57 @@ svg {
   -moz-transform: scale(100);
   -ms-transform: scale(100);
   -o-transform: scale(100);
+}
+@media (max-width: 768px) {
+  .fasilitas-container {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fasilitas-container .box {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .fasilitas-container .box i {
+    font-size: 3rem; /* Ukuran ikon lebih kecil */
+  }
+
+  .fasilitas-container .box h4 {
+    font-size: 0.8rem; /* Ukuran teks lebih kecil */
+  }
+
+  .fasilitas-container .box .btn {
+    padding: 0.3rem 1.5rem;
+    font-size: 0.8rem; /* Tombol lebih kecil */
+  }
+
+  .fasilitas-container .box.overlay::after {
+    height: 20rem;
+    width: 20rem;
+    transform: translate(-200px, -100px);
+  }
+}
+
+@media (max-width: 480px) {
+  .fasilitas-container .box {
+    padding: 0.5rem;
+  }
+
+  .fasilitas-container .box i {
+    font-size: 2.5rem; /* Lebih kecil untuk layar kecil */
+  }
+
+  .fasilitas-container .box h4 {
+    font-size: 0.7rem;
+  }
+
+  .fasilitas-container .box .btn {
+    padding: 0.2rem 1rem;
+    font-size: 0.7rem;
+  }
 }
 
 .daftar-container {
