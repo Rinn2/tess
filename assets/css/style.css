@@ -98,14 +98,10 @@ h4 {
 
 
 .container {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  width: auto;
-  max-width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 0 1rem;
   
 }
 * {
@@ -125,8 +121,10 @@ section {
   min-height: 100vh;
 }
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Ubah menu navbar ke kolom */
+    .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .content {
@@ -379,8 +377,16 @@ nav.scrolling {
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
+
 html, body {
   width: 100%;
   overflow-x: hidden;
