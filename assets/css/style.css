@@ -5,11 +5,147 @@
 }
 
 @media (max-width: 768px) {
-  .item {
-    flex: 1 1 100%; /* 1 kolom pada layar kecil */
+  /* Global Responsive Adjustments */
+  body {
+    font-size: 14px; /* Reduce base font size for smaller screens */
+  }
+
+  /* Home Section Responsiveness */
+  .home-container {
+    grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+    gap: 1rem;
+  }
+
+  .home .left h1 {
+    font-size: 2.5rem; /* Reduce heading size */
+  }
+
+  .home .left h1 span {
+    font-size: 2.6rem;
+  }
+
+  .home .right img {
+    max-width: 100%; /* Make image fully responsive */
+    height: auto;
+  }
+
+  /* About Section Responsiveness */
+  .about-container {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+    margin-top: 50px;
+  }
+
+  .about .left img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Fasilitas Section Responsiveness */
+  .fasilitas-container {
+    flex-direction: column; /* Stack boxes vertically */
+  }
+
+  .fasilitas-container .box {
+    width: 100%; /* Full width for boxes */
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Daftar Section Responsiveness */
+  .daftar-container {
+    grid-template-columns: 1fr; /* Full width layout */
+  }
+
+  .daftar-buttons {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tab buttons */
+    gap: 0.5rem;
+  }
+
+  .daftar-container .tab-content {
+    grid-template-columns: 1fr 1fr; /* 2 columns for tab content */
+    gap: 0.5rem;
+  }
+
+  /* Kritik Section Responsiveness */
+  .Kritik-container {
+    flex-direction: column; /* Stack cards vertically */
+    height: auto;
+    overflow-x: visible;
+  }
+
+  .Kritik-container .card {
+    min-width: 100%; /* Full width cards */
+    margin-bottom: 1rem;
+  }
+
+  /* Contact Section Responsiveness */
+  .contact-content .row {
+    flex-direction: column; /* Stack contact boxes vertically */
+    margin-top: -30px;
+  }
+
+  .contact-content .contact-form {
+    width: 100%; /* Full width form */
+    padding: 1rem;
+    margin: 2rem 0;
+  }
+
+  /* Typography Adjustments */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  /* General Image Responsiveness */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Social Icons Responsiveness */
+  .home .social-icons i {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 0.5rem;
+  }
+
+  /* Navbar Mobile Adjustments */
+  .nav-icons {
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
   }
 }
 
+/* Additional Responsive Fixes */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Even smaller font for very small screens */
+  }
+
+  .home .left h1 {
+    font-size: 2rem;
+  }
+
+  .daftar-buttons {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+
+  .daftar-container .tab-content {
+    grid-template-columns: 1fr; /* Single column for tab content */
+  }
+}
 * {
   margin: 0;
   padding: 0;
