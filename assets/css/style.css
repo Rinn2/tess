@@ -749,6 +749,9 @@ svg {
     flex-direction: column;
     align-items: center;
   }
+  .fasilitas-container .box i {
+    font-size: 2.5rem; /* Ukuran ikon lebih kecil */
+  }
 
   .fasilitas-container .box {
     width: 100%;
@@ -779,6 +782,7 @@ svg {
 @media (max-width: 480px) {
   .fasilitas-container .box {
     padding: 0.5rem;
+    
   }
 
   .fasilitas-container .box i {
