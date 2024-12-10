@@ -33,6 +33,8 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 body.active {
   --color-bg: #212121;
@@ -83,10 +85,23 @@ h3 {
 h4 {
   font-size: 1.1rem;
 }
+
+
 .container {
   margin: 0 auto;
   width: var(--width-lg);
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+* {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 section {
   padding: 5rem 0 3rem;
   min-height: 100vh;
@@ -329,6 +344,19 @@ nav.scrolling {
 .home .right {
   margin: auto;
 }
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+html, body {
+  overflow-x: hidden;
+}
+
 .home .right img {
   max-width: 35rem;
   height: auto;
@@ -593,6 +621,10 @@ svg {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+}
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 .daftar-container .tab-content img {
   box-shadow: var(--shadow);
