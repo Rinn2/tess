@@ -1,86 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @media screen and (max-width: 600px) {
-.container {
-    max-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-Dari tampilan yang Anda lampirkan, masalah yang terlihat adalah konten yang tidak tersusun rapi dan belum menyesuaikan dengan ukuran layar pada perangkat mobile. Berikut adalah langkah-langkah untuk memperbaiki masalah ini:
-
-1. Gunakan Grid atau Flexbox dengan Properti Responsif
-Gunakan CSS modern seperti Flexbox atau Grid untuk memastikan elemen tersusun rapi. Misalnya, untuk kontainer utama:
-
-css
-Copy code
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-2. Sesuaikan Ukuran Font pada Perangkat Mobile
-Gunakan media query untuk memastikan ukuran font sesuai dengan layar kecil:
-
-css
-Copy code
-h1, h2, h3, p {
-    margin: 0;
-    text-align: center;
-    word-break: break-word;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Sesuaikan ukuran untuk layar kecil */
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-      .kritik-item {
-    flex: 1 1 100%; /* Jadi satu kolom penuh di perangkat kecil */
-    max-width: 100%;
-  }
-}
-    }
-    html, body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-@media (max-width: 768px) {
-    .navlist {
-        display: none;
-    }
-    .btn {
+    .container {
         width: 100%;
+        padding: 10px;
     }
-}
-    @media (max-width: 360px) {
-    h1 {
-        font-size: 1.6rem;
-    }
-    .btn {
-        padding: 0.5rem 1rem;
-    }
-    .navlist {
-        font-size: 18px;
-    }
-}
-
+    
     .column {
         width: 100%;
         float: none;
@@ -90,29 +14,7 @@ h1, h2, h3, p {
     display: flex;
     flex-wrap: wrap;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    width: 100%;
-}
-.navlist {
-    display: none; /* Navigasi tersembunyi di mobile */
-}
 
-.menu-toggle {
-    display: block; /* Tampilkan tombol menu di mobile */
-}
-
-@media (min-width: 768px) {
-    .navlist {
-        display: flex; /* Tampilkan menu di layar besar */
-    }
-    .menu-toggle {
-        display: none; /* Sembunyikan toggle di layar besar */
-    }
-}
 .column {
     flex: 1 1 300px; /* Kolom akan menyesuaikan ukuran */
     margin: 10px;
@@ -159,14 +61,6 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
-  display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    max-width: 100%;
-    text-align: center;
-
 @media (max-width: 992px) {
   .container {
     width: var(--width-md);
@@ -202,9 +96,7 @@ body {
   }
 
   section {
-    margin: 0 auto;
-    padding: 1rem;
-    max-width: 100%;
+    padding: 3rem 0 2rem;
   }
 
   h1 {
@@ -229,12 +121,10 @@ body {
     margin: 0.4rem;
   }
 
- .fasilitas-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  .fasilitas-container {
+    flex-direction: column;
     gap: 1rem;
-    width: 100%;
-}
+  }
   
   .fasilitas-container .box {
     width: 100%;
@@ -247,9 +137,7 @@ body {
   .container {
     width: 100%;
   }
-.main-content {
-        padding: 1rem;
-    }
+
   h1 {
     font-size: 1.8rem;
   }
@@ -340,9 +228,8 @@ a {
 }
 span,
 p {
- font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 0 1rem;}
+  font-size: 0.9rem;
+}
 h1,
 h2,
 h3,
@@ -938,11 +825,6 @@ svg {
 
 .Kritik-container {
   display: flex;
-flex-wrap: wrap; /* Agar responsif saat layar lebih kecil */
-  gap: 1rem; /* Jarak antar elemen */
-  justify-content: center; /* Pusatkan konten */
-  margin: 2rem 0;
-
   height: 55vh;
   align-items: flex-start;
   gap: 1rem;
@@ -955,16 +837,7 @@ flex-wrap: wrap; /* Agar responsif saat layar lebih kecil */
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
-  padding: 1rem;
-}
-.kritik-item {
-  flex: 1 1 calc(50% - 1rem); /* Dua kolom pada layar besar */
-  max-width: calc(50% - 1rem); /* Batasan lebar */
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 1rem;
+  padding: 4rem 1rem 2rem;
 }
 .Kritik .title h2 {
   font-weight: 500;
@@ -987,9 +860,7 @@ flex-wrap: wrap; /* Agar responsif saat layar lebih kecil */
 .Kritik-container img {
   position: absolute;
   top: -3rem;
-  width: 80px;
-      height: 80px;
-
+  width: 6rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
