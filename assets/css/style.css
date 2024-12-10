@@ -744,9 +744,9 @@ svg {
   }
 
   .fasilitas-container .box {
-    width: calc(50% - 1rem); /* 2 elemen dalam 1 baris */
-    margin-bottom: 1rem; /* Jarak bawah antar baris */
-    padding: 1rem; /* Padding elemen */
+    width: calc(50% - 0.5rem); /* 2 elemen dalam 1 baris */
+    margin: 0; /* Jarak bawah antar baris */
+    box-sizing: border-box; /* Padding tidak menambah ukuran */
   }
 
   .fasilitas-container .box i {
