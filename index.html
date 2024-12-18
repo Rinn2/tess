@@ -285,48 +285,65 @@
    <div class="copyright">
     <p>Copyright &copy; 2024 by SistemInformasi | All right Reserved.</p>
    </div>
+<!-- Login Modal -->
 <div id="loginModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('loginModal')">&times;</span>
     <h2>Login</h2>
     <form onsubmit="handleLogin(event)">
-      <div class="form-box">
+      <div class="input-box">
+        <i class="fa fa-envelope"></i>
         <input type="email" placeholder="Enter Your Email" required>
       </div>
-      <div class="form-box">
+      <div class="input-box">
+        <i class="fa fa-lock"></i>
         <input type="password" placeholder="Enter Your Password" required>
       </div>
-      <button type="submit" class="btn1">Login</button>
-      <p>Don't have an account? <a href="#createAccountModal" onclick="switchModal('loginModal', 'createAccountModal')">Create Account</a></p>
+      <button type="submit" class="btn-login">Login</button>
+      <p>Don't have an account? 
+        <a href="#createAccountModal" onclick="switchModal('loginModal', 'createAccountModal')">Create Account</a>
+      </p>
     </form>
   </div>
 </div>
 
+<!-- Create Account Modal -->
 <div id="createAccountModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('createAccountModal')">&times;</span>
     <h2>Create Account</h2>
     <form onsubmit="handleCreateAccount(event)">
-      <div class="form-box">
+      <div class="input-box">
+        <i class="fa fa-user"></i>
         <input type="text" placeholder="Masukkan Nama Lengkap" required>
       </div>
-      <div class="form-box">
+      <div class="input-box">
+        <i class="fa fa-id-card"></i>
         <input type="text" placeholder="NIM" required>
       </div>
-      <div class="form-box">
+      <div class="input-box">
+        <i class="fa fa-user-circle"></i>
         <input type="text" placeholder="Masukkan Username Anda" required>
       </div>
-      <div class="form-box">
+      <div class="input-box">
+        <i class="fa fa-lock"></i>
         <input type="password" placeholder="Masukkan Password Anda" required>
       </div>
-      <div class="form-box">
+      <div class="input-box">
+        <i class="fa fa-lock"></i>
         <input type="password" placeholder="Konfirmasi Password" required>
       </div>
-      <button type="submit" class="btn1">Create Account</button>
-      <p>Already have an account? <a href="#loginModal" onclick="switchModal('createAccountModal', 'loginModal')">Login</a></p>
+      <button type="submit" class="btn-login">Create Account</button>
+      <p>Already have an account? 
+        <a href="#loginModal" onclick="switchModal('createAccountModal', 'loginModal')">Login</a>
+      </p>
     </form>
   </div>
 </div>
+
+<!-- FontAwesome for Icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
 
 
 
