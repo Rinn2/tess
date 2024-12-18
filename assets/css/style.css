@@ -1108,38 +1108,96 @@ img, video {
 
 
 /* Login */
-.form-box {
-  margin-bottom: 15px;
+/* Login Container Styling */
+.login-container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent box */
+    border-radius: 15px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: #ffffff;
+    width: 300px;
+    margin: auto;
 }
 
-.form-box input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+/* Profile Icon */
+.profile-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #2c3e50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
 }
 
-.btn1 {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
+.profile-icon i {
+    color: #ffffff;
+    font-size: 30px;
 }
 
-.btn1:hover {
-  background-color: #0056b3;
+/* Input Fields */
+.input-field {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
 }
 
-.modal p a {
-  color: #007bff;
-  text-decoration: none;
+.input-field i {
+    color: #ffffff;
+    margin-right: 10px;
 }
 
-.modal p a:hover {
-  text-decoration: underline;
+.input-field input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    width: 100%;
+    font-size: 14px;
+}
+
+.input-field input::placeholder {
+    color: #cfcfcf;
+}
+
+/* Remember Me and Forgot Password */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: #cfcfcf;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(to right, #5a0fb4, #1e60d6);
 }
 
 
