@@ -1109,7 +1109,7 @@ img, video {
 
 /* Login */
 /* Login Container Styling */
-.login-container {
+.loginModal {
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent box */
     border-radius: 15px;
     padding: 30px 40px;
