@@ -1108,39 +1108,118 @@ img, video {
 
 
 /* Login */
-.form-box {
-  margin-bottom: 15px;
+/* Background Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #d383ff, #779fd8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.form-box input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+/* Modal Container */
+.login-modal {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
 }
 
-.btn1 {
+/* Avatar Circle */
+.avatar {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #002855;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar i {
+  font-size: 50px;
+  color: white;
+}
+
+/* Input Fields */
+.input-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input {
   width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+  padding: 12px 40px;
   border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
+  border-radius: 25px;
+  background: #f3f3f3;
+  font-size: 16px;
 }
 
-.btn1:hover {
-  background-color: #0056b3;
+.input-box input:focus {
+  outline: none;
+  border: 2px solid #5b9bd5;
 }
 
-.modal p a {
-  color: #007bff;
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 18px;
+}
+
+/* Remember Me and Forgot Password */
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.options a {
   text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
 }
 
-.modal p a:hover {
+.options a:hover {
   text-decoration: underline;
 }
+
+/* Login Button */
+.btn-login {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background: #002855;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background: #004080;
+}
+
 
 
 /* styles.css */
