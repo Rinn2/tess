@@ -1159,7 +1159,7 @@ img, video {
 .input-container {
     display: flex;
     align-items: center;
-    background: #2f4662;
+    background: #016820;
     border-radius: 8px;
     margin: 15px 0;
     padding: 10px;
@@ -1194,7 +1194,7 @@ img, video {
 
 .options a {
     text-decoration: none;
-    color: #2f4662;
+    color: #016820;
 }
 
 /* Tombol Login */
@@ -1210,7 +1210,7 @@ button.login-btn {
 }
 
 button.login-btn:hover {
-    background: linear-gradient(to right, #51658c, #2f4662);
+    background: linear-gradient(to right, #016820, #016820);
 }
 /* buat akun */
 /* General Modal Styling */
