@@ -1200,7 +1200,7 @@ img, video {
 /* Tombol Login */
 button.login-btn {
     width: 100%;
-    background: linear-gradient(to right, #2f4662, #51658c);
+    background: linear-gradient(to right,#016820 , #02be21);
     color: #fff;
     border: none;
     padding: 10px;
